@@ -56,9 +56,20 @@ $(window).on("load", function () {
       emailjs.send(service_id, template_id, data).then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          $("form").trigger("reset");
+          $("#contact-form .response").fadeIn().html(data);
+          setTimeout(function () {
+            $("#contact-form .response").fadeOut("slow");
+          }, 5000);
+          $("#contact-form .response").html(
+            '<div class="success">Email has been sent successfully.</div>'
+          );
         },
         function (error) {
           console.log("FAILED...", error);
+          $("#contact-form .response").html(
+            '<div class="failed">Oops some error! could not send email</div>'
+          );
         }
       );
     });
