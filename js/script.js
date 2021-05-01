@@ -51,7 +51,7 @@ $(window).on("load", function() {
                     $('#contact-form .response').fadeOut("slow");
                 }, 5000);
             },
-            error:function(){
+            error:function(data){
                 $('#contact-form .response').fadeIn().html(data);
             }
         });
