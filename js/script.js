@@ -1,63 +1,66 @@
-$(window).on("load", function() {
-    "use strict";
+$(window).on("load", function () {
+  "use strict";
 
-    // LOADER 
+  // LOADER
 
-    $(".preloader").fadeOut();
+  $(".preloader").fadeOut();
 
-    // RESPONSIVE MOBILE MENU 
+  // RESPONSIVE MOBILE MENU
 
-    $(".menu-btn").on("click", function() {
-      $(".responsive-mobile-menu").toggleClass("show");
-      return false;
-    });
+  $(".menu-btn").on("click", function () {
+    $(".responsive-mobile-menu").toggleClass("show");
+    return false;
+  });
 
-    $("html").on("click", function() {
-      $(".responsive-mobile-menu").removeClass("show");
-    });
-    $(".menu-btn, .responsive-mobile-menu").on("click", function(e) {
-      e.stopPropagation();
-    })
+  $("html").on("click", function () {
+    $(".responsive-mobile-menu").removeClass("show");
+  });
+  $(".menu-btn, .responsive-mobile-menu").on("click", function (e) {
+    e.stopPropagation();
+  });
 
-    // CONTACT FORM VALIDATION  
+  // CONTACT FORM VALIDATION
 
-    if($('#contact-form').length){
-      $('#submit').click(function(){
-        
-              var o = new Object();
-              var form = '#contact-form';
-        
-              var name = $('#contact-form .name').val();
-              var email = $('#contact-form .email').val();
-              // var phone = $('#contact-form .phone').val();
-        
-        if(name == '' || email == '')
-        {
-          $('#contact-form .response').html('<div class="failed">Please fill the required fields.</div>');
-          return false;
+  if ($("#contact-form").length) {
+    $("#submit").click(function () {
+      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+      var name = $("#contact-form .name").val();
+      var email = $("#contact-form .email").val();
+      var message = $("#message").val();
+
+      if (name == "" || email == "" || message == "") {
+        $("#contact-form .response").html(
+          '<div class="failed">Please fill the required fields.</div>'
+        );
+        return false;
+      }
+
+      if (!mailformat.test(String(email).toLowerCase())) {
+        $("#contact-form .response").html(
+          '<div class="failed">Please enter valid email id.</div>'
+        );
+        return false;
+      }
+
+      // ================Email Js ========//
+      var service_id = "default_service";
+      var template_id = "template_contactus";
+      emailjs.init("user_WOpltFhJdjpxyZ4advTkD");
+
+      var data = {
+        name: name,
+        email: email,
+        message: message,
+      };
+      emailjs.send(service_id, template_id, data).then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
         }
-              
-        $.ajax({
-            url:"sendemail.php",
-            method:"POST",
-            data: $(form).serialize(),
-            beforeSend:function(){
-                $('#contact-form .response').html('<div class="text-info"><img src="images/preloader.gif"> Loading...</div>');
-            },
-            success:function(data){
-                $('form').trigger("reset");
-                $('#contact-form .response').fadeIn().html(data);
-                setTimeout(function(){
-                    $('#contact-form .response').fadeOut("slow");
-                }, 5000);
-            },
-            error:function(data){
-                $('#contact-form .response').fadeIn().html(data);
-            }
-        });
+      );
     });
-    }
-
+  }
 });
-
-
