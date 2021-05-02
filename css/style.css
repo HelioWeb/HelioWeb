@@ -283,7 +283,7 @@ a,
   z-index: -1;
 }
 .bg-position {
-  background-image: url(../https://via.placeholder.com/1110x1024);
+  background-image: url(../images/about-us-bg.jpg);
   background-size: inherit;
   position: absolute;
   top: 0;
@@ -298,7 +298,7 @@ a,
 }
 .right-position {
   background-position: right;
-  background-image: url(../https://via.placeholder.com/1107x1064);
+  background-image: url(../images/contact.jpg);
 }
 .bg3 {
   background: url(../images/bg3.png) #121318;
@@ -322,11 +322,13 @@ a,
   background-position: top right;
 }
 .bg6 {
-  background: url(../images/bg3.png) #121318;
+  /* background: url(../images/bg3.png) #121318; */
+  background: url(../images/why-choose-us.jpg) #121318;
   background-repeat: no-repeat;
   background-size: inherit;
   background-attachment: inherit;
   background-position: 5% center;
+  width: 46%;
 }
 .bg7 {
   background: url(../images/bg7.png) #121318;
@@ -1287,7 +1289,7 @@ footer {
 }
 
 .testi-thumb > img {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 .testi-info {
   width: auto;
