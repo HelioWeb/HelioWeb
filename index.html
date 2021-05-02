@@ -511,9 +511,10 @@
                     </p>
                   </div>
                   <!--title-hd end-->
-                  <form class="newsletter-form">
-                    <input type="email" name="email" placeholder="Email" />
-                    <button type="submit">
+                  <form class="newsletter-form" id='newsletter-form' method="POST">
+                    <div class="response"></div><br>
+                    <input type="email" name="email" id='nemail' placeholder="Email" />
+                    <button type="submit" id='nsubmit'>
                       <img src="images/send.svg" alt="" />
                     </button>
                   </form>

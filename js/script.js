@@ -74,4 +74,36 @@ $(window).on("load", function () {
       );
     });
   }
+
+  // ============= Newsletter =========== //
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbwPhZHn3G5LhcUEi_1MkQS4A5-1JJNdUxvM_OvuW9foSZTzWJoX_xwwGA3E2QjqoeKC/exec";
+
+  if ($("#newsletter-form").length) {
+    $("#nsubmit").click(function () {
+      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+      var email = $("#nemail").val();
+
+      if (email == "") {
+        $("#newsletter-form .response").html(
+          '<div class="failed">Please enter your email.</div>'
+        );
+
+        return false;
+      }
+
+      if (!mailformat.test(String(email).toLowerCase())) {
+        $("#newsletter-form .response").html(
+          '<div class="failed">Please enter valid email id.</div>'
+        );
+        return false;
+      }
+      fetch(scriptURL, { method: "POST", body: new FormData($('#newsletter-form')) })
+        .then((response) =>
+          alert("Thanks for Contacting us..! We Will Contact You Soon...")
+        )
+        .catch((error) => console.error("Error!", error.message));
+    });
+  }
 });
