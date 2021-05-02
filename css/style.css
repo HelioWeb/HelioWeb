@@ -295,10 +295,12 @@ a,
 }
 .left-position {
   background-position: left;
+  background-size: 55% 100%;
 }
 .right-position {
   background-position: right;
   background-image: url(../images/contact.jpg);
+  background-size: 50% 100%;
 }
 .bg3 {
   background: url(../images/bg3.png) #121318;
@@ -1288,9 +1290,9 @@ footer {
   margin-bottom: 56px;
 }
 
-.testi-thumb > img {
-  /* filter: grayscale(100%); */
-}
+/* .testi-thumb > img {
+  filter: grayscale(100%);
+} */
 .testi-info {
   width: auto;
   padding-left: 48px;
