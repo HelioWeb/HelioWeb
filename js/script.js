@@ -117,19 +117,35 @@ $(window).on("load", function () {
           '<div class="failed">Please enter valid email id.</div>'
         );
         return false;
-      }
-      else{
-        database.ref("HelioWeb/count").once("value", (snapshot) => {
-          const count = snapshot.val();
-          console.log("count is",count);
-          database.ref("HelioWeb/"+count).set({
-            Email:email,
-          });
+      } else {
+        var EmailListRef = firebase.database().ref("HelioWeb/Email");
+        var newEmailListRef = EmailListRef.push();
+        newEmailListRef.set({
+          Email: email,
         });
-        alert("Successfully subscribed")
 
+        // database.ref("HelioWeb").once("value", (snapshot) => {
+        //   const count = snapshot.val().count;
+        //   const obj = {};
+        //   obj[count] = { Email: email };
+        //   obj["count"] = count + 1;
+
+        //   database.ref("HelioWeb/").update(obj);
+        //   // console.log("count is", count);
+        //   // database.ref("HelioWeb/" + count).set({
+        //   //   Email: email,
+        //   // });
+        //   // database.ref("HelioWeb/").update({
+        //   //   count: firebase.database.ServerValue.increment(1),
+        //   // });
+        // });
+        alert("Successfully subscribed");
       }
-      
     });
   }
+
+  database.ref("HelioWeb").once("value", (snapshot) => {
+    const count = snapshot.val();
+    console.log(count);
+  });
 });
