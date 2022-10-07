@@ -1237,6 +1237,7 @@ footer {
   background-image: url(../images/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .top-footer {
   padding: 210px 0 166px;
