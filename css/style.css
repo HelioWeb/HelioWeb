@@ -23,7 +23,7 @@
 									Fonts
 ===================================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* ================================================================================== 
 										Reset Css
@@ -132,7 +132,7 @@ section {
   display: block;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1;
   overflow-x: hidden;
   background-color: #191c26;
@@ -153,7 +153,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 button {
@@ -193,7 +193,7 @@ img {
   vertical-align: middle;
 }
 p {
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 a {
   color: inherit;
@@ -456,7 +456,7 @@ nav ul li a {
   display: inline-block;
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 .right-side-hd {
   float: right;
@@ -465,7 +465,7 @@ nav ul li a {
   display: inline-block;
   color: #ffffff;
   font-size: 20px;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   margin-right: 57px;
 }
 .btn-default {
@@ -494,7 +494,7 @@ button.btn-default {
   position: relative;
 }
 .overlay:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -533,7 +533,7 @@ header .menu-btn {
   margin-top: -4px;
 }
 .main-banner-text > span:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -586,7 +586,7 @@ header .menu-btn {
   position: relative;
 }
 .poly1:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -617,7 +617,7 @@ header .menu-btn {
   transform: translate(-50%, -50%);
 }
 .poly2:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -667,7 +667,7 @@ header .menu-btn {
   display: block;
   font-size: 18px;
   line-height: 150%;
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 .banner-slider .slick-prev,
@@ -745,7 +745,7 @@ header .menu-btn {
   position: relative;
 }
 .btn-default2:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -756,6 +756,32 @@ header .menu-btn {
 .btn-default2:hover:before {
   width: 0;
 }
+/* Carousel Button */
+
+.btn-carousel {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff;
+  margin-top: 12%;
+  margin-left: 16px;
+}
+.btn-carousel:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #dd4142;
+}
+.btn-carousel:hover:before {
+  width: 0;
+}
+
 .btn-default2 img {
   padding-left: 11px;
 }
@@ -831,7 +857,7 @@ header .menu-btn {
 }
 .slick-prev:before,
 .slick-next:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -997,7 +1023,7 @@ header .menu-btn {
   margin-bottom: 0;
 }
 .our-features-list li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: 0;
@@ -1030,7 +1056,7 @@ header .menu-btn {
 .pft-item:before,
 .blog-thumbnail:before,
 .blog-page .blog_post.main:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1155,7 +1181,7 @@ header .menu-btn {
   color: #a9afc3;
   font-size: 14px;
   line-height: 170%;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 .blog_info {
   display: table-cell;
@@ -1252,7 +1278,7 @@ footer {
 }
 
 .newsletter-form button:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -18px;
   left: -13px;
@@ -1263,7 +1289,7 @@ footer {
   filter: blur(10px);
 }
 .newsletter-form button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: -6px;
@@ -1326,7 +1352,7 @@ footer {
   position: relative;
 }
 .testimonial-sec > p:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -62px;
   right: 5px;
@@ -1418,7 +1444,7 @@ footer {
   position: relative;
 }
 .mbl-menu:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -77px;
   left: 50%;
@@ -1461,7 +1487,7 @@ footer {
   position: relative;
 }
 .pager-sec ul li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: 100%;
@@ -1481,7 +1507,7 @@ footer {
   color: #a9afc3;
   font-size: 16px;
   text-transform: capitalize;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 .pager-sec .container-fluid {
   padding: 0 70px;
@@ -1580,7 +1606,7 @@ footer {
   padding: 0;
 }
 .tema-col:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1849,7 +1875,7 @@ footer {
   margin-bottom: 10px;
 }
 .sv-links li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -1915,7 +1941,7 @@ footer {
   position: relative;
 }
 .widget-help:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -1983,7 +2009,7 @@ footer {
   display: none;
 }
 .lang-slct li:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   right: -4px;
@@ -1999,7 +2025,7 @@ footer {
   display: inline-block;
   color: rgba(169, 175, 195, 0.5);
   font-size: 14px;
-  font-family: 'Muli';
+  font-family: "Muli";
   text-transform: uppercase;
 }
 
@@ -2030,7 +2056,7 @@ footer.no-bg {
 .filters-nav li a:before,
 .cz-controls > a:before,
 .post-ct > a:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2127,7 +2153,7 @@ body.bg-color3 footer {
 .mg-list li > h3 {
   color: #fff;
   font-size: 18px;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-weight: 700;
   margin-right: 10px;
   display: inline-block;
@@ -2136,7 +2162,7 @@ body.bg-color3 footer {
   display: inline-block;
   color: #a9afc3;
   font-size: 18px;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 .st-btn {
   display: inline-block;
@@ -2232,7 +2258,7 @@ footer.gradient-bg {
 .blog-single .blog-post.main p.large {
   font-size: 22px;
   line-height: 150%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 .blog-single blockquote {
   background-color: #111319;
@@ -2242,7 +2268,7 @@ footer.gradient-bg {
   position: relative;
 }
 .blog-single blockquote:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 50px;
   right: 55px;
@@ -2367,7 +2393,7 @@ footer.gradient-bg {
   margin: 0;
 }
 .related-posts-section .blog_post.main:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2423,12 +2449,12 @@ footer.gradient-bg {
   vertical-align: middle;
   color: #a9afc3;
   font-size: 14px;
-  font-family: 'Muli';
+  font-family: "Muli";
   padding-left: 27px;
   position: relative;
 }
 .cm-head > span:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -2455,7 +2481,7 @@ footer.gradient-bg {
 
 /* POST COMMENT SECTION */
 
-.form-group input[type='text'],
+.form-group input[type="text"],
 .form-group textarea {
   width: 100%;
   border: 0;
@@ -2479,7 +2505,7 @@ footer.gradient-bg {
 .form-group {
   margin: 0 0 50px;
 }
-.form-group input[type='text']:focus,
+.form-group input[type="text"]:focus,
 .form-group textarea:focus {
   background-color: inherit;
   outline: none;
@@ -2534,7 +2560,7 @@ footer.gradient-bg2 {
   position: relative;
 }
 .grad-overlay:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -2551,7 +2577,7 @@ footer.gradient-bg2 {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Muli';
+  font-family: "Muli";
 }
 .widget_categories ul {
   border-top: 1px solid #3a3f50;
@@ -2625,7 +2651,7 @@ footer.gradient-bg2 {
 .contact-nfo > h3 {
   color: #fff;
   font-size: 16px;
-  font-family: 'Muli';
+  font-family: "Muli";
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -2688,14 +2714,14 @@ body.no-scroll {
   line-height: 150%;
   font-size: 22px;
   font-weight: 300;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin-bottom: 79px;
 }
 .error-content > h4 {
   color: #a9afc3;
   font-size: 18px;
   line-height: 170%;
-  font-family: 'Muli';
+  font-family: "Muli";
   margin-bottom: 47px;
 }
 .error-content > h4 a {
