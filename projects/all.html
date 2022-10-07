@@ -25,7 +25,7 @@
     <div class="preloader">
       <div class="loader-content">
         <div class="logo">
-          <img src="images/logo.png" alt="" />
+          <img src="../images/logo.png" alt="" />
         </div>
         <h2>is loading...</h2>
         <img src="images/loader.gif" alt="" />
@@ -75,11 +75,12 @@
     <!--left-sidebar end-->
 
     <div class="wrapper">
+      <!--=================== NAVBAR ===================-->
       <header>
         <div class="container">
           <div class="header-content">
             <div class="logo">
-              <a href="index.html" title="">
+              <a href="/" title="">
                 <img src="../images/logo.png" alt="" />
               </a>
             </div>
@@ -129,6 +130,29 @@
       </header>
       <!--header end-->
 
+      <!--=================== RESPONSIVE NAV ===================-->
+      <div class="responsive-mobile-menu">
+        <div class="responsive-logo">
+          <img src="../images/logo.png" alt="" />
+        </div>
+        <ul>
+          <li>
+            <a href="#aboutUS" title="" class="responsive-menu-option">About</a>
+          </li>
+          <li>
+            <a href="#services" title="" class="responsive-menu-option"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#contact" title="" class="responsive-menu-option"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--responsive-mobile-menu end-->
+
       <section class="pager-sec text-right dark-bg pb-75">
         <div class="container-fluid">
           <ul>
@@ -164,7 +188,7 @@
                   data-option-key="filter"
                 >
                   <li><a data-option-value="*" class="selected">All</a></li>
-                  <li><a data-option-value=".ui-ux">UI/UX and Brand</a></li>
+                  <li><a data-option-value=".ui-ux">Portfolio</a></li>
                   <li><a data-option-value=".apps">Apps</a></li>
                   <li><a data-option-value=".web">Web</a></li>
                   <li><a data-option-value=".e-commerce">E-commerce</a></li>
@@ -177,7 +201,7 @@
                   <!-- KD -->
                   <div class="col-lg-4 col-md-6 col-sm-6 apps web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img src="../images//projects/kd/kd-card.png" alt="" />
                       <div class="team-caption">
                         <h3>
                           <a href="kd.html" title="KD Project"
@@ -194,7 +218,10 @@
                   <!-- Alpha Plus -->
                   <div class="col-lg-4 col-md-6 col-sm-6 web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img
+                        src="../images/projects/alphaplus/ap-card.png"
+                        alt=""
+                      />
                       <div class="team-caption">
                         <h3>
                           <a href="alphaplus.html" title="Alpha Plus Project"
@@ -211,7 +238,10 @@
                   <!-- Eyewoot -->
                   <div class="col-lg-4 col-md-6 col-sm-6 e-commerce web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img
+                        src="../images/projects/eyewoot/ew-card.png"
+                        alt=""
+                      />
                       <div class="team-caption">
                         <h3>
                           <a href="eyewoot.html" title=""
@@ -228,7 +258,10 @@
                   <!-- Please Mom -->
                   <div class="col-lg-4 col-md-6 col-sm-6 marketing web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img
+                        src="../images/projects/pleasemom/pm-card.png"
+                        alt=""
+                      />
                       <div class="team-caption">
                         <h3>
                           <a href="pleasemom.html" title=""
@@ -245,7 +278,10 @@
                   <!-- Sports Ami -->
                   <div class="col-lg-4 col-md-6 col-sm-6 e-commerce web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img
+                        src="../images/projects/sportsami/sa-card.png"
+                        alt=""
+                      />
                       <div class="team-caption">
                         <h3>
                           <a href="sportsami.html" title=""
@@ -262,11 +298,14 @@
                   <!-- Dr Savita Portfolio -->
                   <div class="col-lg-4 col-md-6 col-sm-6 ui-ux web">
                     <div class="tema-col">
-                      <img src="https://via.placeholder.com/380x490" alt="" />
+                      <img
+                        src="../images/projects/portfolio/pf-card.png"
+                        alt=""
+                      />
                       <div class="team-caption">
                         <h3>
                           <a href="dr-savita-portfolio.html" title="">
-                            Personal portfolio
+                            Doctor's portfolio
                           </a>
                         </h3>
                         <span>Dr Savita Asopa</span>
@@ -389,23 +428,13 @@
                   class="widget widget-about wow fadeInUp"
                   data-wow-delay="300ms"
                 >
-                  <img src="images/logo.png" alt="" />
-                  <p>Copyright © 2021 HelioWeb.</p>
+                  <img src="../images/logo.png" alt="" />
+                  <p>Copyright © 2022 HelioWeb.</p>
                 </div>
                 <!--widget-about end-->
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <!-- <div class="widget widget-para wow fadeInDown" data-wow-delay="600ms">
-								<h3 class="widget-title">Working hours:</h3>
-								<p>Mon - Fri: 9 am - 6 pm Sat, Sun: Holiday</p>
-							</div> -->
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-                <!-- <div class="widget widget-para wow fadeInUp" data-wow-delay="900ms">
-								<h3 class="widget-title">Address:</h3>
-								<p>27 Division St, New York, NY 10002, USA</p>
-							</div> -->
-              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12"></div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12"></div>
               <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                 <div
                   class="widget widget-para wow fadeInDown"
@@ -429,6 +458,7 @@
       </footer>
       <!--footer end-->
     </div>
+
     <!--wrapper end-->
     <div class="clearfix"></div>
 
