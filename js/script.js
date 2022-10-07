@@ -28,7 +28,8 @@ $(window).on("load", function () {
 
   if ($("#contact-form").length) {
     $("#submit").click(function () {
-      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var mailformat =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
       var name = $("#contact-form .name").val();
       var email = $("#contact-form .email").val();
@@ -49,7 +50,7 @@ $(window).on("load", function () {
       }
 
       // ================Email Js ========//
-      var service_id = "default_service";
+      var service_id = "gmail";
       var template_id = "template_contactus";
       emailjs.init("user_WOpltFhJdjpxyZ4advTkD");
 
@@ -67,7 +68,7 @@ $(window).on("load", function () {
             $("#contact-form .response").fadeOut("slow");
           }, 5000);
           $("#contact-form .response").html(
-            '<div class="success">Email has been sent successfully.</div>'
+            '<div style="background-color: green; color: white; padding: 8px 0px">Email has been sent successfully.</div>'
           );
         },
         function (error) {
@@ -100,7 +101,8 @@ $(window).on("load", function () {
 
   if ($("#newsletter-form").length) {
     $("#nsubmit").click(function () {
-      var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var mailformat =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
       var email = $("#nemail").val();
 
